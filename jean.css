@@ -1,0 +1,100 @@
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: #414141;
+	font: 12px/18px "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif;
+}
+
+/* MISE EN PAGE */
+
+div.page {
+	height: 100%;
+	position: fixed;
+	display: inline-flex;
+}
+
+div#titre {
+	width: 40%;
+	right: 52%;
+	top: 0;
+}
+
+div#resume {
+	width: 40%;
+	left: 48%;
+	top: 0;
+}
+
+div#com {
+	/*background-image: url("img/4.png");*/
+	right: 0;
+	top: 0;
+	width: 60px;
+}
+
+/* GAUCHE - TITRE */
+
+div#titre div.cont {
+	margin: auto 0;
+	width: 100%;
+}
+
+div#titre h1 {
+	width: 100%;
+	text-align: center;
+	font-family: "helvetica-neue" ,"Lucida Console";
+}
+
+div#titre img#profil {
+	display: block;
+	height: 250px;
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10%;
+	box-shadow: 0px 0px 20px #cbcbcb;
+}
+
+/* DROITE - RESUME */
+
+div#resume div.text {
+	text-align: justify;
+	margin: auto 10%;
+}
+
+div#resume div.text a {
+	text-decoration: none;
+	color: #006699;
+}
+
+div#resume div.text a:hover,
+div#resume div.text a:active,
+div#resume div.text a:focus {
+	text-decoration: underline;
+}
+
+/* SOCIAL */
+
+div#com ul {
+	margin: auto 0;
+	list-style: none;
+	width: 60px;
+	padding: 0;
+}
+
+div#com ul a {
+	display: list-item;
+	width: 56px;
+	padding-top: .3em;
+	text-align: center;
+	text-decoration: none;
+	color: #006699;
+	border-right: 4px solid white;
+}
+
+div#com ul a:hover {
+	border-color: #006699;
+}
