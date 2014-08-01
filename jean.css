@@ -5,6 +5,7 @@ body, html {
 
 body {
 	color: #414141;
+	background-color: white;
 	font: 12px/18px "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif;
 }
 
@@ -12,19 +13,19 @@ body {
 
 div.page {
 	height: 100%;
-	position: fixed;
-	display: inline-flex;
+	position: absolute;
+	display: table;
 }
 
 div#titre {
 	width: 40%;
-	right: 52%;
+	left: 8%;
 	top: 0;
 }
 
 div#resume {
 	width: 40%;
-	left: 48%;
+	left: 45%;
 	top: 0;
 }
 
@@ -35,10 +36,17 @@ div#com {
 	width: 60px;
 }
 
+div#resume div.text,
+div#titre div.cont,
+div#com ul {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
 /* GAUCHE - TITRE */
 
 div#titre div.cont {
-	margin: auto 0;
 	width: 100%;
 }
 
@@ -62,7 +70,7 @@ div#titre img#profil {
 
 div#resume div.text {
 	text-align: justify;
-	margin: auto 10%;
+	margin: 0 10%;
 }
 
 div#resume div.text a {
@@ -79,7 +87,7 @@ div#resume div.text a:focus {
 /* SOCIAL */
 
 div#com ul {
-	margin: auto 0;
+	margin: 0;
 	list-style: none;
 	width: 60px;
 	padding: 0;
