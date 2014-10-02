@@ -1,6 +1,9 @@
 var jean = {
 	lang : "",
 	detect : function() {
+		if(typeof(Storage)!=="undefined" && localStorage.getItem("lang") && (localStorage.getItem("lang")=="fr" || localStorage.getItem("lang")=="en")){
+			return localStorage.getItem("lang");
+		}
 		return (window.navigator.userLanguage || window.navigator.language).substr(0, 2);
 	},
 	update : function($lang) {
@@ -19,8 +22,9 @@ var jean = {
 			$("#s-fr").removeClass("active");
 			$("#s-en").addClass("active");
 		}
+		if(typeof(Storage)!=="undefined") localStorage.setItem("lang",$lang);
 	}
-}
+};
 
 $(document).ready(function() {
 	$("#s-fr").click(function(){
