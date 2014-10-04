@@ -194,14 +194,19 @@ div.switch span.active {
 
 	div#com ul {
 		display: inline-block;
+		text-align: center;
 		margin-right: auto;
 		margin-left: auto;
 		width: 300px;
 	}
 
 	div#com ul a {
-		display: table-cell;
+		display: inline-block;
 		border: 0;
+	}
+
+	div.text p {
+		line-height: 1.2em;
 	}
 
 }

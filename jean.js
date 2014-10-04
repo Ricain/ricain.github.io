@@ -27,6 +27,7 @@ var jean = {
 };
 
 $(document).ready(function() {
+	if(window.location.hostname == "ricain.github.io") $(location).attr('href',"jmercadier.fr");
 	$("#s-fr").click(function(){
 		jean.update("fr");
 	});
