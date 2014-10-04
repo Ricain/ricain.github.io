@@ -27,7 +27,7 @@ var jean = {
 };
 
 $(document).ready(function() {
-	if(window.location.hostname == "ricain.github.io") $(location).attr('href',"http://jmercadier.fr");
+	if(window.location.hostname == "ricain.github.io") window.location.replace("http://jmercadier.fr");
 	$("#s-fr").click(function(){
 		jean.update("fr");
 	});
