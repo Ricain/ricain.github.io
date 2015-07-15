@@ -6,14 +6,14 @@
 	font-family: "Montserrat";
 	font-style: normal;
 	font-weight: 700;
-	src: local("Montserrat-Bold"), url("http://fonts.gstatic.com/s/montserrat/v6/IQHow_FEYlDC4Gzy_m8fcmaVI6zN22yiurzcBKxPjFE.woff2") format("woff2"), url("http://fonts.gstatic.com/s/montserrat/v6/IQHow_FEYlDC4Gzy_m8fcnbFhgvWbfSbdVg11QabG8w.woff") format("woff");
+	src: url("Montserrat-Bold.ttf");
 }
 
 @font-face {
 	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 300;
-	src: local("Roboto Light"), local("Roboto-Light"), url("http://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfZBw1xU1rKptJj_0jans920.woff2") format("woff2"), url("http://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfbO3LdcAZYWl9Si6vvxL-qU.woff") format("woff");
+	src: url("Roboto-Light.ttf");
 }
 
 body,
@@ -27,6 +27,10 @@ body {
 	background-color: white;
 	color: #222;
 	font: 300 14px/1.8 "Roboto","Helvetica","lucida grande",sans-serif,sans-serif;
+}
+
+.down {
+	display: none;
 }
 
 /* HEAD */
