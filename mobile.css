@@ -27,20 +27,21 @@ body {
 	background-color: white;
 	color: #222;
 	font: 300 14px/1.8 "Roboto","Helvetica","lucida grande",sans-serif,sans-serif;
+	text-transform: capitalize;
 }
 
 /* HEAD */
 
 h1 {
-	font-size: 5em;
+	font-size: 2.7em;
 	text-align: center;
 	font-family: Montserrat;
-	margin: 10% 0 0 0;
+	margin-bottom: 0;
 }
 
 .skill {
 	color: #777;
-	font-size: 1.25rem;
+	font-size: 1em;
 	font: "Karla";
 	list-style: none;
 	padding: 0;
@@ -57,83 +58,13 @@ h1 {
 /* BOX COLOR */
 
 #works {
-	background-color: #0080d2;
-}
-
-#works .box_list li::before {
-	color: #00578e;
+	background-color: #1da33b;
 }
 
 #schools {
-	background-color: #029557;
-}
-
-#schools .box_list li::before {
-	color: #02623a;
+	background-color: #0080d2;
 }
 
 #contact {
-	background-color: #c73535;
-}
-
-#contact .box_list li::before {
-	color: #862323;
-}
-
-/* BOX LAYOUT */
-
-.box_container {
-	height: 180px;
-	width: 100%;
-	margin-top: 10%;
-	text-align: center;
-}
-
-.box_container .box_envelop {
-	height: 100%;
-	width: 250px;
-	display: inline-block;
-	vertical-align: text-top;
-}
-
-.box_container .box_envelop div {
-	display: inline-block;
-	width: 150px;
-	height: 1.8em;
-	font-size: 1.3em;
-	margin: 0 50px;
-	border-radius: 5px;
-	color: white;
-	text-align: center;
-	transition: width 1s, height 1s, margin-left 1s, margin-right 1s;
-	cursor: crosshair;
-	overflow: hidden;
-}
-
-.box_container .box_envelop div:hover {
-	width: 100%;
-	height: 100%;
-	margin: 0;
-}
-
-/* BOX LIST */
-
-.box_list {
-	list-style: none;
-	padding-left: 0;
-}
-
-.box_list li a {
-	text-decoration: none;
-	color: white;
-}
-
-.box_list li a:hover {
-	text-decoration: underline;
-}
-
-.box_list li::before {
-	content: "#";
-	display: inline-block;
-	margin-right: 5px;
+	background-color: #cf980d;
 }
