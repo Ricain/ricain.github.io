@@ -25,6 +25,72 @@ html {
 
 body {
 	background-color: white;
-	color: #222;
+	color: #363636;
 	font: 300 14px/1.8 "Roboto","Helvetica","lucida grande",sans-serif,sans-serif;
+}
+
+nav {
+	display: block;
+	position: absolute;
+	padding: 30px 80px;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+h1 {
+	font-size: 3em;
+	margin: 0;
+}
+
+menu {
+	display: block;
+	float: right;
+}
+
+menu a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #479bdf;
+	font-size: 1.5em;
+	display: inline-block;
+	margin: 0 20px;
+	line-height: 3em;
+}
+
+menu a:hover {
+	text-decoration: underline;
+}
+
+.prompt {
+	display: block;
+	position: absolute;
+	height: 20%;
+	top: 40%;
+	right: 0;
+	left: 0;
+	padding-left: 80px;
+}
+
+.prompt div {
+	font-size: 12vh;
+	display: inline-block;
+}
+
+.dol {
+	color: #479bdf;
+}
+
+@keyframes blink {
+	50% { border-color: #479bdf; }
+}
+
+.cmd {
+	border-right: 3px solid white;
+	padding-right: 5px;
+	animation-name: blink ;
+	animation-duration: .5s ;
+	animation-timing-function: step-end ;
+	animation-iteration-count: infinite ;
+	animation-direction: alternate ;
 }
