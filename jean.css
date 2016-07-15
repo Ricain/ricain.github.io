@@ -1,0 +1,93 @@
+@font-face {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 700;
+	src: url("Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: "quicksand";
+  font-style: normal;
+  font-weight: 300;
+  src: url("Quicksand-Light.otf");
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    font-family: helvetica;
+    /*color: #2472aa;*/
+}
+
+h1 {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    font-size: 5em;
+	font-family: Montserrat;
+}
+
+h2 {
+	font-family: quicksand;
+	text-align: center;
+	font-weight: 100;
+	color: rgb(136, 136, 136);
+	font-size: 2em;
+	text-transform: uppercase;
+	margin: 0;
+	margin-top: 10px;
+}
+
+.let_cont {
+    display: inline-block;
+    transform-origin: top;
+}
+
+.let_cont .let_fil {
+    display: block;
+    margin: 0 auto;
+    border-right: 1px solid rgb(230, 230, 230);
+    width: 0;
+}
+
+.let_cont .let {
+    display: block;
+    margin-top: -25px;
+    text-transform: uppercase;
+}
+
+.links {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.links a {
+	display: block;
+	text-decoration: none;
+}
+
+.links a img {
+	vertical-align: middle;
+	display: inline-block;
+	height: 1.7em;
+	margin: 0 10px;
+}
+
+.links a:hover,
+.links a:active {
+	text-decoration: underline;
+}
+
+.desc {
+	margin-top: 15px;
+	font-family: helvetica;
+	text-align: center;
+	font-size: .85em;
+	color: rgb(154, 154, 154);
+}
