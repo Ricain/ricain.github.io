@@ -11,7 +11,7 @@ $jean = {
     time : 3000,
     level : 0,
     acc  : 1,
-    colors : ["#2E7D32", "#283593", "#1565C0", "#00695C", "#AD1457", "#c62828"],
+    colors : ["#2E7D32", "#1565C0", "#00838F", "#c62828", "#FF8F00"],
     init : function () {
         $jean.resize();
         $(window).resize($jean.resize);
@@ -22,9 +22,19 @@ $jean = {
         $(".let_cont .let_fil").css("height", parseInt($(document).height()/3+5) + "px");
     },
     updateColor : function () {
-        $col = $jean.colors[Math.floor(Math.random()*$jean.colors.length)];
-        $("body").css("color", $col);
-        $(".links a").css("color", $col);
+        $col = Math.floor(Math.random()*$jean.colors.length);
+        if (typeof(Storage) !== "undefined") {
+            $test = localStorage.getItem("color");
+            if ($test) {
+                $col = parseInt($test)+1;
+                if ($col >= $jean.colors.length) $col = 0;
+            }
+        }
+        localStorage.setItem("color", $col);
+        $rcol = $jean.colors[$col];
+        $("body").css("color", $rcol);
+        $(".links a").css("color", $rcol);
+        $("#bar_color").attr("content", $rcol);
     },
     loop : function () {
         if ($jean.level == 0) {
