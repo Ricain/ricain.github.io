@@ -17,9 +17,16 @@ $jean = {
 		$(window).resize($jean.resize);
 		$jean.updateColor();
 		$jean.loop();
+		$(window).click($jean.updateColor);
+		setTimeout($jean.setTransition, 300);
 	},
 	resize : function () {
 		$(".let_cont .let_fil").css("height", parseInt($(document).height()/3+5) + "px");
+	},
+	setTransition : function () {
+		$("body").css("transition", "color 1s linear");
+		$(".links a").css("transition", "color 1s linear");
+		$(".fil0").css("transition", "fill 1s linear");
 	},
 	updateColor : function () {
 		$col = Math.floor(Math.random()*$jean.colors.length);
@@ -34,26 +41,26 @@ $jean = {
 		$rcol = $jean.colors[$col];
 		$("body").css("color", $rcol);
 		$(".links a").css("color", $rcol);
-		$("#bar_color").attr("content", $rcol);
+		$(".bar_color").attr("content", $rcol);
 		$(".fil0").css("fill", $rcol);
 	},
 	loop : function () {
-		if ($jean.level == 0) {
+		if ($jean.level === 0) {
 			$jean.j.up();
 			$jean.level += 1;
 			return;
 		}
-		if ($jean.level == 1) {
+		if ($jean.level === 1) {
 			$jean.j.down();
 			$jean.level += 1;
 			return;
 		}
-		if ($jean.level == 2) {
+		if ($jean.level === 2) {
 			$jean.n.up();
 			$jean.level += 1;
 			return;
 		}
-		if ($jean.level == 3) {
+		if ($jean.level === 3) {
 			$jean.n.down();
 			$jean.level = 0;
 			return;
@@ -64,13 +71,13 @@ $jean = {
 			$laps = $jean.time/$jean.angle;
 			$("#j_cont").attr("rot_obj", $jean.angle);
 			$("#j_cont").attr("rot_cur", 0);
-			$jean.accel($("#j_cont"), $laps)
+			$jean.accel($("#j_cont"), $laps);
 		},
 		down : function () {
 			$laps = $jean.time/$jean.angle;
 			$("#j_cont").attr("rot_obj", 0);
 			$("#j_cont").attr("rot_cur", $jean.angle);
-			$jean.accel($("#j_cont"), $laps)
+			$jean.accel($("#j_cont"), $laps);
 		}
 	},
 	n : {
@@ -78,13 +85,13 @@ $jean = {
 			$laps = $jean.time/$jean.angle;
 			$("#n_cont").attr("rot_obj", -$jean.angle);
 			$("#n_cont").attr("rot_cur", 0);
-			$jean.accel($("#n_cont"), $laps)
+			$jean.accel($("#n_cont"), $laps);
 		},
 		down : function () {
 			$laps = $jean.time/$jean.angle;
 			$("#n_cont").attr("rot_obj", 0);
 			$("#n_cont").attr("rot_cur", -$jean.angle);
-			$jean.accel($("#n_cont"), $laps)
+			$jean.accel($("#n_cont"), $laps);
 		}
 	},
 	accel : function ($tag, $laps) {
@@ -102,9 +109,9 @@ $jean = {
 			$tag.rotate($cur+$rot);
 			$tag.attr("rot_cur", $cur+$rot);
 			setTimeout($rec, $laps/Math.abs($obj-$cur+$jean.acc));
-		}
+		};
 		$rec();
 	}
-}
+};
 
 $(document).ready($jean.init);
