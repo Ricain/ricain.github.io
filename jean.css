@@ -21,7 +21,6 @@ body {
 
 body {
     font-family: helvetica;
-    /*color: #2472aa;*/
 }
 
 h1 {
@@ -72,10 +71,12 @@ h2 {
 	text-decoration: none;
 }
 
-.links a img {
+.links a img,
+.links a svg {
 	vertical-align: middle;
 	display: inline-block;
 	height: 1.7em;
+	width: 1.7em;
 	margin: 0 10px;
 }
 
@@ -91,4 +92,21 @@ h2 {
 	text-align: center;
 	font-size: .85em;
 	color: rgb(136, 136, 136);
+}
+
+svg {
+	shape-rendering: geometricPrecision;
+	text-rendering: geometricPrecision;
+	image-rendering: optimizeQuality;
+	fill-rule: evenodd;
+	clip-rule: evenodd;
+}
+
+.fil1 {
+	fill:none;
+}
+
+.fil0 {
+	fill:#212121;
+	fill-rule:nonzero;
 }

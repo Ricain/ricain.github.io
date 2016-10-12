@@ -11,7 +11,7 @@ $jean = {
     time : 3000,
     level : 0,
     acc  : 1,
-    colors : ["#2E7D32", "#1565C0", "#00838F", "#c62828", "#FF8F00"],
+    colors : ["#00838F", "#2E7D32", "#1565C0", "#c62828", "#FF8F00"],
     init : function () {
         $jean.resize();
         $(window).resize($jean.resize);
@@ -35,6 +35,7 @@ $jean = {
         $("body").css("color", $rcol);
         $(".links a").css("color", $rcol);
         $("#bar_color").attr("content", $rcol);
+        $(".fil0").css("fill", $rcol);
     },
     loop : function () {
         if ($jean.level == 0) {
