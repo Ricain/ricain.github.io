@@ -6,29 +6,29 @@
 }
 
 @font-face {
-  font-family: "quicksand";
-  font-style: normal;
-  font-weight: 300;
-  src: url("Quicksand-Light.otf");
+	font-family: "quicksand";
+	font-style: normal;
+	font-weight: 300;
+	src: url("Quicksand-Light.otf");
 }
 
 html,
 body {
-    padding: 0;
-    margin: 0;
-    border: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
 }
 
 body {
-    font-family: helvetica;
+	font-family: helvetica;
 }
 
 h1 {
-    display: block;
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
-    font-size: 5em;
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	font-size: 5em;
 	font-family: Montserrat;
 }
 
@@ -44,21 +44,21 @@ h2 {
 }
 
 .let_cont {
-    display: inline-block;
-    transform-origin: top;
+	display: inline-block;
+	transform-origin: top;
 }
 
 .let_cont .let_fil {
-    display: block;
-    margin: 0 auto;
-    border-right: 1px solid rgb(230, 230, 230);
-    width: 0;
+	display: block;
+	margin: 0 auto;
+	border-right: 1px solid rgb(230, 230, 230);
+	width: 0;
 }
 
 .let_cont .let {
-    display: block;
-    margin-top: -25px;
-    text-transform: uppercase;
+	display: block;
+	margin-top: -25px;
+	text-transform: uppercase;
 }
 
 .links {
@@ -103,10 +103,10 @@ svg {
 }
 
 .fil1 {
-	fill:none;
+	fill: none;
 }
 
 .fil0 {
-	fill:#212121;
-	fill-rule:nonzero;
+	fill: #212121;
+	fill-rule: nonzero;
 }
